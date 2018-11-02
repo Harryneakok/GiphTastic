@@ -31,7 +31,7 @@ function renderButtons() {
         buttons.attr('data-name', animals[i]);
         buttons.text(animals[i]);
         $("#button-holder").append(buttons);
-        callIt();
+
     }
 }
 
@@ -51,7 +51,7 @@ function callIt() {
         for (var j = 0; j < results.length; j++) {
             var animalGif = $("<img>");
             animalGif.attr("src", results[j].images.fixed_height.url);
-            $("gif-holder").append(animalGif);
+            $("#gif-holder").append(animalGif);
         }
     });
 };
